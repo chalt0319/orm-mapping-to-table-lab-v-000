@@ -43,6 +43,7 @@ class Student
     SELECT MAX(id) FROM students
     SQL
 
-    self.id = the_id
+    self.id = DB[:conn].execute(the_id)
   end
+  
 end
