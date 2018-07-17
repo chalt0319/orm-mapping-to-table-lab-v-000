@@ -45,5 +45,5 @@ class Student
 
     @id = DB[:conn].execute(the_id)
   end
-  
+
 end
