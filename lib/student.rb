@@ -38,5 +38,11 @@ class Student
     SQL
 
     DB[:conn].execute(sql, self.name, self.grade)
+
+    the_id = <<-SQL
+    SELECT MAX(id) FROM students 
+    SQL
+
+    self.id = the_id
   end
 end
