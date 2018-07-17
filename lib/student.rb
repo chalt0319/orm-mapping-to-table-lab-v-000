@@ -43,6 +43,6 @@ class Student
     SELECT MAX(id) FROM students
     SQL
 
-    the_id = self.id
+    self.id = the_id
   end
 end
